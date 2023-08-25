@@ -7,7 +7,7 @@
 - Global Scope: Variables declared outside of any function or block have global scope. They are accessible from anywhere in the code, including other functions and blocks. 
 
  ```javascript
-const globalVar = 42; // Global variable
+let globalVar = 42; // Global variable
 
 function doSomething() {
   console.log(globalVar); // Accessible inside the function
@@ -20,7 +20,7 @@ console.log(globalVar); // Accessible outside the function
 
  ```javascript
 function doSomething() {
-  const localVar = 10; // Local variable
+  let localVar = 10; // Local variable
   console.log(localVar); // Accessible inside the function
 }
 

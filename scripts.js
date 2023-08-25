@@ -1,8 +1,8 @@
 /********************* Exercise 1  **********************/
-const numberOfUsers = 15;
+let numberOfUsers = 15;
 
 function authentication() {
-  const numberOfAuthenticatedUsers = 10;
+  let numberOfAuthenticatedUsers = 10;
   console.log(numberOfUsers); 
   console.log(numberOfAuthenticatedUsers); 
 }
@@ -25,12 +25,12 @@ authentication();
 let baseSalary = 50000;
 
 function calculateBonus() {
-  const bonusPercentage = 0.1; // 10% bonus
+  let bonusPercentage = 0.1; // 10% bonus
   return baseSalary * bonusPercentage;
 }
 
 function calculateTotalSalary() {
-  const bonus = calculateBonus();
+  let bonus = calculateBonus();
   return baseSalary + bonus;
 }
 
@@ -51,7 +51,7 @@ function calculateTotalSalary() {
 
 /********************* Exercise 3  **********************/
 
-const user1 = {
+let user1 = {
     name: "Johnny Diaz",
     age: 30,
     address: {
@@ -60,7 +60,7 @@ const user1 = {
     },
   };
   
-const user2 = {
+let user2 = {
     name: "Lupita Davenport",
     age: 30,
     address: {
@@ -79,7 +79,7 @@ const user2 = {
 
  
 /********************* Exercise 4  **********************/
-const books = ['Anna Karenina', 'To Kill a Mockingbird', 'Where the Sidewalk Ends', 'The Fellowship of the Ring', 'A Wrinkle in Time'];
+let books = ['Anna Karenina', 'To Kill a Mockingbird', 'Where the Sidewalk Ends', 'The Fellowship of the Ring', 'A Wrinkle in Time'];
 
 
 function createBookCollection(books) {  
@@ -88,7 +88,7 @@ function createBookCollection(books) {
   }
 
 
-const bookCollection = createBookCollection();
+let bookCollection = createBookCollection();
 
 console.log(bookCollection);
   
