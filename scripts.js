@@ -1,18 +1,19 @@
 /********************* Exercise 1  **********************/
+
 let numberOfUsers = 15;
 
 function authentication() {
   let numberOfAuthenticatedUsers = 10;
-  console.log(numberOfUsers); 
-  console.log(numberOfAuthenticatedUsers); 
+  console.log(numberOfUsers);
+  console.log(numberOfAuthenticatedUsers);
 }
 
-console.log(numberOfUsers); 
-console.log(numberOfAuthenticatedUsers); 
+console.log(numberOfUsers);
+console.log(numberOfAuthenticatedUsers);
 
 authentication();
 
-// Explain what will be logged in the console for each of the console logs in the block of code above. 
+// Explain what will be logged in the console for each of the console logs in the block of code above.
 
 
 
@@ -52,21 +53,21 @@ function calculateTotalSalary() {
 /********************* Exercise 3  **********************/
 
 let user1 = {
-    name: "Johnny Diaz",
-    age: 30,
-    address: {
-      city: "New York",
-      country: "USA",
-    },
-  };
-  
+  name: "Johnny Diaz",
+  age: 30,
+  address: {
+    city: "New York",
+    country: "USA",
+  },
+};
+
 let user2 = {
-    name: "Lupita Davenport",
-    age: 30,
-    address: {
-        city: "London",
-        country: "UK",
-    },
+  name: "Lupita Davenport",
+  age: 30,
+  address: {
+    city: "London",
+    country: "UK",
+  },
 };
 
 // Create a function that can take in a user variable. Return a string that says, "[NAME] lives in [CITY], [COUNTRY]"
@@ -79,14 +80,20 @@ let user2 = {
 
  
 /********************* Exercise 4  **********************/
-let books = ['Anna Karenina', 'To Kill a Mockingbird', 'Where the Sidewalk Ends', 'The Fellowship of the Ring', 'A Wrinkle in Time'];
 
+let books = [
+  "Anna Karenina",
+  "To Kill a Mockingbird",
+  "Where the Sidewalk Ends",
+  "The Fellowship of the Ring",
+  "A Wrinkle in Time",
+];
 
-function createBookCollection(books) {  
-    let removeLastBook = books.pop();
-    return `You have read ${books.length} books!`;
-  }
+function createBookCollection(books) {
+  let removeLastBook = books.pop();
 
+  return `You have read ${books.length} books!`;
+}
 
 let bookCollection = createBookCollection();
 
@@ -119,13 +126,13 @@ console.log(bookCollection);
 
 
 /********************* Exercise 6  **********************/
-var userName = 'Katherine';
+let userName = "Katherine";
 
 function showMessage(userName) {
-  let message = 'Hello, ' + userName;
+  let message = "Hello, " + userName;
   alert(message);
 }
 
-showMessage('Dominique');
+showMessage("Dominique");
 
 // What would print in the alert message when the following code is executed?
