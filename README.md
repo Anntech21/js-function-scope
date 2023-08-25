@@ -25,7 +25,7 @@ function doSomething() {
 }
 
 doSomething();
-// console.log(localVar); // Error: localVar is not accessible here
+console.log(localVar); // Error: localVar is not accessible here
  ```
 
 

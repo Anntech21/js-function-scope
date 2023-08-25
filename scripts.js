@@ -81,7 +81,7 @@ let user2 = {
  
 /********************* Exercise 4  **********************/
 
-let books = [
+let readingList = [
   "Anna Karenina",
   "To Kill a Mockingbird",
   "Where the Sidewalk Ends",
@@ -89,17 +89,39 @@ let books = [
   "A Wrinkle in Time",
 ];
 
-function createBookCollection(books) {
-  let removeLastBook = books.pop();
+let readingList2 = [
+  "The Scar",
+  "The Last Unicorn",
+  "The Phantom Tollbooth",
+  "You Don't Know JS",
+];
 
-  return `You have read ${books.length} books!`;
+function getNextBookToRead() {
+  let nextBook = readingList[0];
+
+  return (
+    "You should read " +
+    nextBook +
+    " next. You have " +
+    readingList.length +
+    " books left on your list!"
+  );
 }
 
-let bookCollection = createBookCollection();
+let nextBookInfo1 = getNextBookToRead(readingList);
+let nextBookInfo2 = getNextBookToRead(readingList2);
 
-console.log(bookCollection);
-  
-// Run the above code. What error do you see? How would you fix this code?
+// Run this code, then get nextBookInfo1 and nextBookInfo2 to log in the console. They are supposed
+// to be separate reading lists, but the function is always looking at what's in the first reading
+// list.
+
+// Why? How could you fix this so that the function will work with `readingList` or
+// `readingList2`? Please don't change the names of any current identifiers—that is, `readingList`
+// and `readingList2` should stay named that.
+
+// A hint: the function calls to get nextBooInfo1 and
+// nextBookInfo2 are passing in the values for the reading lists they want to get the next book
+// from.
 
 
 
@@ -108,8 +130,8 @@ console.log(bookCollection);
 
 /********************* Exercise 5  **********************/
 // Declare a function named calculateDogAge that:
-// Takes 1 argument: your puppy's age.
-// Calculates your dog's age by multiplying the puppy’s age by 7.
+// Takes 1 argument: your dog's age.
+// Calculates your dog's age in humany years by multiplying the puppy’s age by 7.
 // Returns the result of a string like so: "Your doggie is NN years old in dog years!"
 
 // Call the function three times with different sets of values.
@@ -126,13 +148,17 @@ console.log(bookCollection);
 
 
 /********************* Exercise 6  **********************/
-let userName = "Katherine";
+let username = "Katherine";
 
-function showMessage(userName) {
-  let message = "Hello, " + userName;
+function showMessage(username) {
+  let message = "Hello, " + username;
   alert(message);
 }
 
 showMessage("Dominique");
 
-// What would print in the alert message when the following code is executed?
+// What would print in the alert message when the following code is executed? Think about it, then run the code to see.
+
+
+
+// How could we change the code so that we are alerting a message for Katherine? Don't write the string literal "Katherine" a second time (that value already exists if you want to use it again), and don't change the names of any current identifiers (i.e., variables and parameters)—username is a great name for the value globally and in the function!
