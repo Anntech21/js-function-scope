@@ -11,15 +11,12 @@ function authentication() {
 
 authentication();
 
-//console.log(numberOfUsers);
-//console.log(numberOfAuthenticatedUsers);
-
 // Explain what will be logged in the console for each of the console logs in the block of code above.
 
 
 authentication();
-15
-10
+15 //console.log(numberOfUsers);
+10 //console.log(numberOfAuthenticatedUsers);
 undefined
 
 
@@ -42,11 +39,12 @@ function calculateTotalSalary() {
 totalSalary = calculateTotalSalary();
 
 // Call the calculateTotalSalary function. Explain below each of the steps that are taken by the functions.
+// global variable base salary has value of 50000, totalSalary value is value of calculateTotalSalary. When we call the function calculateTotalSalary, function will return is the value of baseSalary + bonus which is called from function calculateBonus.
 
 console.log(totalSalary);
 
 // What is the output?
-55000
+55000 //totalSalary = calculateTotalSalary();
 
 // How would you change the functions so that instead of a global variable the function takes in an argument for the base salary?
 
@@ -60,6 +58,7 @@ function calculateTotalSalary(baseSalary) {
   return baseSalary + bonus;
 }
 
+// by assigning a local variable to the function and parameter.
 //let baseSalary = 50000;
 //let totalSalary = calculateTotalSalary(baseSalary);
 
@@ -86,15 +85,16 @@ let user2 = {
 };
 
 // Create a function that can take in a user variable. Return a string that says, "[NAME] lives in [CITY], [COUNTRY]"
-function intro(user) {
-  const { name, address } = user;
-  const { city, country } = address;
+function uv(user) {
+  let { name, address } = user;
+  let { city, country } = address;
 
-  return "${name} lives in ${city}, ${country}";
+  return `${name} lives in ${city}, ${country}`;
 }
 
-console.log(intro(user1));
-console.log(intro(user2));
+console.log(uv(user1)); //Johnny Diaz lives in New York, USA
+console.log(uv(user2)); //{name: 'Lupita Davenport', age: 30, address: {…}}
+
 
 /********************* Exercise 4  **********************/
 
@@ -128,8 +128,8 @@ function getNextBookToRead() {
 let nextBookInfo1 = getNextBookToRead(readingList);
 let nextBookInfo2 = getNextBookToRead(readingList2);
 
-// Run this code, then get nextBookInfo1 and nextBookInfo2 to log in the console. They are supposed
-// to be separate reading lists, but the function is always looking at what's in the first reading
+// Run this code, then get nextBookInfo1 and nextBookInfo2 to log in the console. They are supposed //undefined
+// to be separate reading lists, but the function is always looking at what's in the first reading 
 // list.
 //++console.log(getNextBookToRead());
 
@@ -157,8 +157,8 @@ function getNextBookToRead(readingList) {
 let nextBookInfo1 = getNextBookToRead(readingList);
 let nextBookInfo2 = getNextBookToRead(readingList2);
 
-console.log(nextBookInfo1);
-console.log(nextBookInfo2);
+console.log(nextBookInfo1); //You should read Anna Karenina next. You have 5 books left on your list!
+console.log(nextBookInfo2); //You should read The Scar next. You have 4 books left on your list!
 
 /********************* Exercise 5  **********************/
 // Declare a function named calculateDogAge that:
@@ -185,7 +185,7 @@ console.log(result2);
 console.log(result3);
 
 // What type of scope are you using to declare the variables?
-//++ local scope
+local scope
 
 /********************* Exercise 6  **********************/
 let username = "Katherine";
@@ -198,6 +198,7 @@ function showMessage(username) {
 showMessage("Dominique");
 
 // What would print in the alert message when the following code is executed? Think about it, then run the code to see.
+Hello, Dominique
 
 // How could we change the code so that we are alerting a message for Katherine? Don't write the string literal "Katherine" a second time (that value already exists if you want to use it again), and don't change the names of any current identifiers (i.e., variables and parameters)—username is a great name for the value globally and in the function!
-+showMessage(username);
++showMessage(username); // Hello, Katherine
